@@ -17,6 +17,13 @@
         <div class="container">
           <a class="navbar-brand fw-bold" href="#">Atelier</a>
           <button
+            id="toggle-tema"
+            type="button"
+            class="btn btn-outline-light ms-auto me-2 order-md-last"
+          >
+            Tema scuro
+          </button>
+          <button
             class="navbar-toggler"
             data-bs-toggle="collapse"
             data-bs-target="#nav-menu"
@@ -24,7 +31,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="nav-menu">
-            <ul class="navbar-nav d-flex ms-auto mx-2">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#studio">Studio</a>
               </li>
@@ -35,13 +42,6 @@
                 <a class="nav-link" href="#contatti">Contatti</a>
               </li>
             </ul>
-            <button
-              id="toggle-tema"
-              type="button"
-              class="btn btn-outline-light ms-md-2 mt-2 mt-md-0"
-            >
-              Tema scuro
-            </button>
           </div>
         </div>
       </nav>
@@ -67,7 +67,7 @@
       </p>
       <div class="services-container">
         <div
-          class="services-card text-center col-12 col-md-3 ms-md-3 ms-lg-5 w-100 h-100"
+          class="services-card text-center col-12 col-md-3 ms-md-3 ms-lg-5 w-100"
         >
           <span class="fs-3">🏠</span>
           <h3>Progettazione residenziale</h3>
@@ -77,7 +77,7 @@
           </p>
         </div>
 
-        <div class="services-card text-center col-12 col-md-3 w-100 h-100">
+        <div class="services-card text-center col-12 col-md-3 w-100">
           <span class="fs-3">🪑</span>
           <h3>Interior design</h3>
           <p>
@@ -87,7 +87,7 @@
         </div>
 
         <div
-          class="services-card text-center col-12 col-md-3 ms-md-3 me-lg-5 w-100 h-100"
+          class="services-card text-center col-12 col-md-3 ms-md-3 me-lg-5 w-100"
         >
           <span class="fs-3">🧱</span>
           <h3>Ristrutturazioni</h3>
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section id="contatti">
+    <section id="contatti" class="bg-body-secondary">
       <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
       <h2 class="text-center fw-bold">Contattaci</h2>
       <p class="text-center text-secondary">
@@ -137,7 +137,7 @@
       </form>
     </section>
 
-    <footer class="py-4 mt-5">
+    <footer class="py-5 text-center">
       <!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
       <div class="container">
         <div class="row mb-4">
@@ -148,13 +148,13 @@
               Via dei Pioppi 12, Milano
             </p>
           </div>
-          <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">
+          <div class="col-12 col-md-4 mb-2 mb-md-0">
             <p class="fw-bold mb-2">Link</p>
             <p><a href="#studio">Studio</a></p>
             <p><a href="#servizi">Servizi</a></p>
             <p><a href="#contatti">Contatti</a></p>
           </div>
-          <div class="col-12 col-md-4 text-center">
+          <div class="col-12 col-md-4">
             <p class="fw-bold mb-2">Contatti</p>
             <p>
               info@atelier.example <br />
@@ -163,7 +163,7 @@
           </div>
         </div>
         <hr />
-        <p class="text-center m-0">
+        <p class="text-center mb-4">
           © 2026 Atelier - Tutti i diritti riservati.
         </p>
       </div>
