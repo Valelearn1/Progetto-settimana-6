@@ -27,7 +27,9 @@ $shadow-card: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-size: 14px;
   }
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-10px);
@@ -95,6 +97,11 @@ body.dark {
 }
 
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+
+.sticky-top {
+  position: sticky;
+  z-index: 1000;
+}
 
 #studio,
 #servizi,

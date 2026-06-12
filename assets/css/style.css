@@ -47,6 +47,11 @@ body.dark .btn-close {
   filter: invert(1);
 }
 
+.sticky-top {
+  position: sticky;
+  z-index: 1000;
+}
+
 #studio,
 #servizi,
 #contatti {
