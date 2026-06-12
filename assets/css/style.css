@@ -93,7 +93,6 @@ footer .navbar-toggler .navbar-toggler-icon {
 }
 #project-btn:hover {
   background-color: hsl(20, 30%, 25%);
-  border-radius: 8px;
 }
 
 .services-container {
@@ -119,6 +118,9 @@ footer .navbar-toggler .navbar-toggler-icon {
 .services-card p {
   color: #6c757d;
   font-size: 14px;
+}
+.services-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .services-card:hover {
   transform: translateY(-10px);
