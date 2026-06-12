@@ -99,7 +99,14 @@ footer {
   }
 }
 
-#contatti {
-  background-color: c.$bg-form;
-  padding: 60px 500px;
+#submit-btn {
+  background-color: c.$bg-brown;
+  color: c.$color-white;
+  border: none;
+  border-radius: $radius-base;
+  padding: 8px 0;
+
+  &:hover {
+    background-color: color.adjust(c.$bg-brown, $lightness: -10%);
+  }
 }

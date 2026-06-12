@@ -25,9 +25,11 @@
           </button>
           <div class="collapse navbar-collapse" id="nav-menu">
             <ul class="navbar-nav d-flex ms-auto mx-2">
-              <li class="nav-item"><a class="nav-link">Studio</a></li>
-              <li class="nav-item"><a class="nav-link">Servizi</a></li>
-              <li class="nav-item"><a class="nav-link">Contatti</a></li>
+              <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatti">Contatti</a>
+              </li>
             </ul>
             <button
               id="toggle-tema"
@@ -44,78 +46,107 @@
     <section id="studio" class="text-center">
       <!-- Hero: titolo grande, sottotitolo, CTA. Sfondo brand. min-height 80vh -->
       <div class="hero-content" id="heroContent">
-          <h1>Architettura per spazi che parlano</h1>
-          <p>
-            Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali e al contesto.
-          </p>
-          <button id="project-btn" class="p-2">Inizia un progetto</button>
+        <h1>Architettura per spazi che parlano</h1>
+        <p>
+          Progettiamo case, uffici e spazi commerciali con attenzione alla luce,
+          ai materiali e al contesto.
+        </p>
+        <button id="project-btn" class="p-2">Inizia un progetto</button>
+      </div>
     </section>
 
     <section id="servizi">
       <!-- 3 card servizi affiancate da md in su -->
       <h2 class="fw-bold text-center">I nostri servizi</h2>
-      <p class="text-center text-secondary">Tre aree di lavoro, una sola attenzione alla qualità.</p>
-        <div class="services-container">
-          <div class="services-card text-center col-12 col-md-3 ms-md-3 ms-lg-5 w-100 h-100">
-            <span class="fs-3">🏠</span>
-            <h3>Progettazione residenziale</h3>
-            <p>
-              Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi.
-            </p>
-          </div>
-
-          <div class="services-card text-center col-12 col-md-3 w-100 h-100">
-            <span class="fs-3">🪑</span>
-            <h3>Interior design</h3>
-            <p>
-              Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.
-            </p>
-          </div>
-
-          <div class="services-card text-center col-12 col-md-3 ms-md-3 me-lg-5 w-100 h-100">
-            <span class="fs-3">🧱</span>
-            <h3>Ristrutturazioni</h3>
-            <p>
-              Riqualificazione di spazi esistenti, gestione dei lavori e coordinamento con le imprese.
-            </p>
-          </div>
+      <p class="text-center text-secondary">
+        Tre aree di lavoro, una sola attenzione alla qualità.
+      </p>
+      <div class="services-container">
+        <div
+          class="services-card text-center col-12 col-md-3 ms-md-3 ms-lg-5 w-100 h-100"
+        >
+          <span class="fs-3">🏠</span>
+          <h3>Progettazione residenziale</h3>
+          <p>
+            Case private, ville e ristrutturazioni domestiche, dal sopralluogo
+            alla consegna delle chiavi.
+          </p>
         </div>
+
+        <div class="services-card text-center col-12 col-md-3 w-100 h-100">
+          <span class="fs-3">🪑</span>
+          <h3>Interior design</h3>
+          <p>
+            Allestimenti d'interno per case e uffici, con materiali selezionati
+            e arredo su misura.
+          </p>
+        </div>
+
+        <div
+          class="services-card text-center col-12 col-md-3 ms-md-3 me-lg-5 w-100 h-100"
+        >
+          <span class="fs-3">🧱</span>
+          <h3>Ristrutturazioni</h3>
+          <p>
+            Riqualificazione di spazi esistenti, gestione dei lavori e
+            coordinamento con le imprese.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="contatti">
       <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
-      <h3 class="text-center fw-bold">Contattaci</h3>
-      <p class="text-center pb-4 text-secondary">Compila il form, ti rispondiamo entro 48 ore.</p>
-      <form>
+      <h2 class="text-center fw-bold">Contattaci</h2>
+      <p class="text-center text-secondary">
+        Compila il form, ti rispondiamo entro 48 ore.
+      </p>
+      <form class="mx-auto mt-4" style="max-width: 600px">
         <div class="mb-3">
-          <label for="name" class="form-label">Nome</label>
-          <input type="text" class="name" id="name" aria-describedby="name">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" />
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-3">
+          <label for="tipo-progetto" class="form-label">Tipo di progetto</label>
+          <select class="form-select" id="tipo-progetto">
+            <option value="residenziale">Residenziale</option>
+            <option value="interior">Interior design</option>
+            <option value="ristrutturazione">Ristrutturazione</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="messaggio" class="form-label">Messaggio</label>
+          <textarea class="form-control" id="messaggio" rows="5"></textarea>
+        </div>
+        <button type="submit" id="submit-btn" class="w-100">Invia</button>
       </form>
     </section>
 
     <footer class="py-4 mt-5">
       <!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
       <div class="row ps-3">
-        <div class="col-12 col-md-4 mb-2 mb-md-0">Atelier
-          <p>Studio di architettura <br />
-            Via dei Pioppi 12, Milano</p>
-          
+        <div class="col-12 col-md-4 mb-2 mb-md-0">
+          Atelier
+          <p>
+            Studio di architettura <br />
+            Via dei Pioppi 12, Milano
+          </p>
         </div>
         <div class="col-12 col-md-4 mb-2 mb-md-0 text-center">Link</div>
-        <div class="col-12 col-md-4 text-center">Contatti
-          <p>info@atelier.example <br />
-          +39 02 0000 1111</p>
+        <div class="col-12 col-md-4 text-center">
+          Contatti
+          <p>
+            info@atelier.example <br />
+            +39 02 0000 1111
+          </p>
+        </div>
+        <hr />
+        <div class="container text-center">
+          <p class="m-0">© 2026 Atelier - Tutti i diritti riservati.</p>
         </div>
       </div>
     </footer>

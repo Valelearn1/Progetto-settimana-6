@@ -71,9 +71,15 @@ footer .row {
   }
 }
 
-#contatti {
-  background-color: rgb(231, 229, 229);
-  padding: 60px 500px;
+#submit-btn {
+  background-color: hsl(20, 30%, 35%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 0;
+}
+#submit-btn:hover {
+  background-color: hsl(20, 30%, 25%);
 }
 
 /*# sourceMappingURL=style.css.map */
