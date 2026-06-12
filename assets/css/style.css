@@ -1,0 +1,79 @@
+#studio,
+#servizi,
+#contatti {
+  padding: 80px;
+}
+
+.navbar,
+footer {
+  background-color: hsl(20, 20%, 15%);
+}
+.navbar .navbar-brand,
+footer .navbar-brand {
+  color: hsl(40, 30%, 90%);
+}
+.navbar .nav-link,
+footer .nav-link {
+  color: hsl(40, 30%, 90%);
+}
+.navbar .container,
+.navbar .row,
+footer .container,
+footer .row {
+  color: #ffffff;
+}
+
+#studio {
+  background-color: hsl(20, 30%, 35%);
+  color: #ffffff;
+}
+
+#project-btn {
+  background-color: hsl(20, 30%, 35%);
+  color: #ffffff;
+  border: none;
+}
+#project-btn:hover {
+  background-color: hsl(20, 30%, 25%);
+  border-radius: 8px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.services-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.services-card h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.services-card p {
+  color: #6c757d;
+  font-size: 14px;
+}
+.services-card {
+  flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+  .services-card {
+    flex: 1;
+  }
+}
+
+#contatti {
+  background-color: rgb(231, 229, 229);
+  padding: 60px 500px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+// Atelier — Week Project Settimana VI
+// Definisci qui le tue variabili, mixin, override Bootstrap.
+
+@use "colors" as c;
+@use "sass:color";
+
+// === Variabili (definisci $brand-primary, $brand-secondary, $radius-base, ecc.) ===
+$radius-base: 8px;
+$shadow-card: 0 2px 6px rgba(0, 0, 0, 0.1);
+$shadow-card-hover: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+// === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
+@mixin card {
+  background-color: c.$color-white;
+  border: 1px solid #dee2e6;
+  border-radius: $radius-base;
+  padding: 24px;
+  box-shadow: $shadow-card;
+
+  h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  p {
+    color: #6c757d;
+    font-size: 14px;
+  }
+}
+
+// body.dark {
+//   @include tema(#1a1a1a, #f0f0f0, #2c2c2c, #444444, #adb5bd);
+
+//   footer {
+//     background-color: #0d6efd;
+//   }
+
+//   .btn-close {
+//     filter: invert(1);
+//   }
+// }
+
+// === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+
+#studio,
+#servizi,
+#contatti {
+  padding: 80px;
+}
+
+.navbar,
+footer {
+  background-color: c.$brand-primary;
+
+  .navbar-brand {
+    color: hsl(40, 30%, 90%);
+  }
+
+  .nav-link {
+    color: hsl(40, 30%, 90%);
+  }
+  .container,
+  .row {
+    color: c.$color-white;
+  }
+}
+
+#studio {
+  background-color: c.$bg-brown;
+  color: c.$color-white;
+}
+
+#project-btn {
+  background-color: c.$bg-brown;
+  color: c.$color-white;
+  border: none;
+
+  &:hover {
+    background-color: color.adjust(c.$bg-brown, $lightness: -10%);
+    border-radius: $radius-base;
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.services-card {
+  @include card;
+  flex: 0 0 100%;
+
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+}
+
+#contatti {
+  background-color: c.$bg-form;
+  padding: 60px 500px;
+}
