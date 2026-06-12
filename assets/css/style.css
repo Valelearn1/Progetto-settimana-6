@@ -120,6 +120,9 @@ footer .navbar-toggler .navbar-toggler-icon {
   color: #6c757d;
   font-size: 14px;
 }
+.services-card:hover {
+  transform: translateY(-10px);
+}
 .services-card {
   flex: 0 0 100%;
 }
